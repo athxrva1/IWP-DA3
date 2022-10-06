@@ -1,0 +1,22 @@
+.square {
+    width : 100px;
+    height : 100px;
+    background : #124;
+    position :absolute;
+  }
+  
+  
+  
+  .active {
+    animation : move 1s 2 alternate;
+  }
+  @keyframes move {
+    0%{
+      left : 0;
+    }
+    100%{
+      left : 90vw;
+    }
+  }
+
+  

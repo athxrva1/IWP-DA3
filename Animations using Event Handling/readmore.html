@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_readmore.css">
+    <title>Document</title>
+</head>
+<body>
+    <article id="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure perferendis voluptatum harum natus accusantium assumenda tempore quos, nisi accusamus minus ad iste autem. Numquam, rem sed blanditiis ut nobis voluptatibus.
+        </p>
+  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maxime illum, nostrum odit eligendi recusandae magni nesciunt a mollitia voluptates architecto voluptatum fugit natus alias? Deleniti dolorum nulla nostrum expedita.
+        </p>
+  
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem voluptatem delectus soluta temporibus accusantium. Sint facere ullam nisi deserunt culpa. Inventore itaque quia veritatis animi ex distinctio eos at amet?
+        </p>
+        
+  </article>
+  <button id="read-more">Show more</button>
+
+  <a href="mouseover.html">Another example? Try Mouseover!</a>
+    
+    
+    <script>
+        const article = document.querySelector("#content");
+const button = document.querySelector("#read-more");
+
+button.addEventListener("click", readMore);
+
+function readMore() {
+     if (article.className == "open") {
+       // Read less
+     article.className = "";
+     button.innerHTML = "Show more";
+   } else {
+     article.className = "open";
+     button.innerHTML = "Show less";
+   }
+}
+
+    </script>
+</body>
+</html>
